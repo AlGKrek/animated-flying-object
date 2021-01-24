@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: relative;
+    margin: 10% auto;
+    background-color: deepskyblue;
+    width: 400px;
+    height: 400px;
+}
+.square{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 100px;
+    height: 100px;
+    background-color: darkviolet;
+    animation: circle 12s linear infinite;
+}
+
+@keyframes circle {
+    
+    25%{
+        left: 70%; 
+        top: 5%;
+    }
+    50%{
+        left: 70%;
+        top: 70%;
+        border-radius: 50%;
+    }
+    75%{
+        left: 5%;
+        top: 70%;
+    }
+    100%{
+        transform: rotate(360deg);
+        left: 5%;
+        top: 5%;              
+    }
+}
